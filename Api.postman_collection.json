@@ -1,0 +1,291 @@
+{
+	"info": {
+		"_postman_id": "79cf7064-929b-4161-abc2-330e31f10bce",
+		"name": "Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Students (Authenticated)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "adminpassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1598/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1598",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Students (No-Auth)",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1599/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1599",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Student by ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "adminpassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1598/student/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1598",
+					"path": [
+						"student",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Student",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "adminpassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Papež\",\n    \"lastName\": \"Svizcev\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1598/new-student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1598",
+					"path": [
+						"new-student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Student",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "adminpassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1598/student/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1598",
+					"path": [
+						"student",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Classes",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "adminpassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1598/classes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1598",
+					"path": [
+						"classes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Class",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "adminpassword",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "adminuser",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"English\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1598/new-class",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1598",
+					"path": [
+						"new-class"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
