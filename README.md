@@ -6,10 +6,10 @@ Prepare a really simple Student Information System. In this system students can 
 
 - list all available classes
 - basic search of classes (i.e. by class name)
-- student can enroll to a one or many classes
-- student can cancel enrollment to a class
+- student can enroll to a one or many classes (not enough time, other more important stuff)
+- student can cancel enrollment to a class (not enough time, other more important stuff)
 
-- authentication:
+- authentication (not enough time, added simple basic authentication):
     - each student has a unique hash that is used for authentication
     - each operation checks hash for user authenticity
 

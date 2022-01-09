@@ -164,8 +164,8 @@ public class StudentController {
 	/**
 	 * Apply Students to Class.
 	 *
-	 * @param classId
-	 * @return
+	 * (not enough time to implement, other more important stuff)
+	 *
 	 */
 	@PutMapping("/student/class/{classId}")
 	public ResponseEntity applyStudentToClass(@PathVariable Long classId, @RequestBody Students students) {
@@ -184,6 +184,8 @@ public class StudentController {
 
 	/**
 	 * Remove Students application from specific class
+	 *
+	 * (not enough time to implement, other more important stuff)
 	 *
 	 * @param id
 	 * @param classId
