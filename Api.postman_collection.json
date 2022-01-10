@@ -48,12 +48,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:1599/students",
+					"raw": "http://localhost:1598/students",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "1599",
+					"port": "1598",
 					"path": [
 						"students"
 					]
